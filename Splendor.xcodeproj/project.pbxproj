@@ -12,7 +12,6 @@
 		07306ACE231073920064C913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Main.storyboard */; };
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
-		07306ADE231073930064C913 /* SplendorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306ADD231073930064C913 /* SplendorTests.swift */; };
 		07306AE9231079750064C913 /* PrimeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AE8231079750064C913 /* PrimeFactorsTests.swift */; };
 		07306AEB23107A740064C913 /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AEA23107A740064C913 /* PrimeFactors.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		07306AD2231073930064C913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07306AD4231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AD9231073930064C913 /* SplendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07306ADD231073930064C913 /* SplendorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplendorTests.swift; sourceTree = "<group>"; };
 		07306ADF231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AE8231079750064C913 /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
 		07306AEA23107A740064C913 /* PrimeFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		07306ADC231073930064C913 /* SplendorTests */ = {
 			isa = PBXGroup;
 			children = (
-				07306ADD231073930064C913 /* SplendorTests.swift */,
 				07306ADF231073930064C913 /* Info.plist */,
 				07306AE8231079750064C913 /* PrimeFactorsTests.swift */,
 			);
@@ -214,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07306AE9231079750064C913 /* PrimeFactorsTests.swift in Sources */,
-				07306ADE231073930064C913 /* SplendorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
