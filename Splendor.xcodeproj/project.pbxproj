@@ -12,8 +12,13 @@
 		07306ACE231073920064C913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Main.storyboard */; };
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
-		07306AE9231079750064C913 /* PrimeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AE8231079750064C913 /* PrimeFactorsTests.swift */; };
 		07306AEB23107A740064C913 /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AEA23107A740064C913 /* PrimeFactors.swift */; };
+		079FCDD423108D2400E767A4 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 079FCDD323108D2400E767A4 /* Carthage */; };
+		07E2C83323108D570086958C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
+		07E2C83523108D570086958C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; };
+		07E2C83723108D790086958C /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07E2C83823108D790086958C /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07E2C83A23108D980086958C /* PrimeFactorsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2C83923108D980086958C /* PrimeFactorsSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		07E2C83623108D630086958C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07E2C83723108D790086958C /* Nimble.framework in CopyFiles */,
+				07E2C83823108D790086958C /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07306AC5231073920064C913 /* Splendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306AC8231073920064C913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +55,11 @@
 		07306AD4231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AD9231073930064C913 /* SplendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306ADF231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07306AE8231079750064C913 /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
 		07306AEA23107A740064C913 /* PrimeFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
+		079FCDD323108D2400E767A4 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		07E2C83223108D570086958C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		07E2C83423108D570086958C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		07E2C83923108D980086958C /* PrimeFactorsSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsSpecs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E2C83323108D570086958C /* Nimble.framework in Frameworks */,
+				07E2C83523108D570086958C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +88,8 @@
 				07306AC7231073920064C913 /* Splendor */,
 				07306ADC231073930064C913 /* SplendorTests */,
 				07306AC6231073920064C913 /* Products */,
+				079FCDD323108D2400E767A4 /* Carthage */,
+				07E2C83123108D570086958C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +120,18 @@
 			isa = PBXGroup;
 			children = (
 				07306ADF231073930064C913 /* Info.plist */,
-				07306AE8231079750064C913 /* PrimeFactorsTests.swift */,
+				07E2C83923108D980086958C /* PrimeFactorsSpecs.swift */,
 			);
 			path = SplendorTests;
+			sourceTree = "<group>";
+		};
+		07E2C83123108D570086958C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E2C83223108D570086958C /* Nimble.framework */,
+				07E2C83423108D570086958C /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +161,7 @@
 				07306AD5231073930064C913 /* Sources */,
 				07306AD6231073930064C913 /* Frameworks */,
 				07306AD7231073930064C913 /* Resources */,
+				07E2C83623108D630086958C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -183,6 +219,7 @@
 				07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */,
 				07306AD0231073930064C913 /* Assets.xcassets in Resources */,
 				07306ACE231073920064C913 /* Main.storyboard in Resources */,
+				079FCDD423108D2400E767A4 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07306AE9231079750064C913 /* PrimeFactorsTests.swift in Sources */,
+				07E2C83A23108D980086958C /* PrimeFactorsSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +437,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SplendorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,6 +461,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SplendorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
