@@ -9,12 +9,19 @@ class ViewController: UIViewController {
         myTitle.text = "HIII"
      }
 
+    @IBOutlet var myInput: UITextField!
+
     @IBOutlet var myTitle: UILabel!
 
     @IBAction func myButton() {
-        count += 1
-        print("clicked the button!")
-        myTitle.text = "Clicked \(count) times"
+        if let text = myInput.text {
+            if let intText = Int(text) {
+                myTitle.text = "\(PrimeFactors.of(number: intText))"
+            } else {
+                myTitle.text = "\"\(text)\" is not a number"
+            }
+        }
     }
+
 }
 
