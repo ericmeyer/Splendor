@@ -1,20 +1,20 @@
-//
-//  ViewController.swift
-//  Splendor
-//
-//  Created by Eric Meyer on 8/23/19.
-//  Copyright © 2019 Eric Meyer. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    var count = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        myTitle.text = "HIII"
+     }
+
+    @IBOutlet var myTitle: UILabel!
+
+    @IBAction func myButton() {
+        count += 1
+        print("clicked the button!")
+        myTitle.text = "Clicked \(count) times"
     }
-
-
 }
 
