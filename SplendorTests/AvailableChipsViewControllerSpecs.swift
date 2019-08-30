@@ -13,8 +13,8 @@ class AvailableChipsViewControllerSpecs: QuickSpec {
         func buildController() -> AvailableChipsViewController {
             let controller = AvailableChipsViewController()
             let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewLayout())
-            collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "AvailableChipCell")
             controller.availableChipsView = collectionView
+            controller.viewDidLoad()
 
             return controller
         }

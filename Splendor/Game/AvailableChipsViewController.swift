@@ -6,6 +6,7 @@ public class AvailableChipsViewController: UIViewController, UICollectionViewDat
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        availableChipsView.register(UINib(nibName: "AvailableChipViewCell", bundle: nil), forCellWithReuseIdentifier: "AvailableChipViewCell")
         availableChipsView.dataSource = self
     }
 
@@ -14,7 +15,7 @@ public class AvailableChipsViewController: UIViewController, UICollectionViewDat
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AvailableChipCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AvailableChipViewCell", for: indexPath) as! AvailableChipViewCell
         if indexPath.row == 0 {
             cell.backgroundColor = .blue
         } else {
