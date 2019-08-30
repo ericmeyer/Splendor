@@ -13,6 +13,8 @@
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
 		07306AEB23107A740064C913 /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AEA23107A740064C913 /* PrimeFactors.swift */; };
+		0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */; };
+		0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */; };
 		079FCDD423108D2400E767A4 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 079FCDD323108D2400E767A4 /* Carthage */; };
 		07E2C83323108D570086958C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
 		07E2C83523108D570086958C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; };
@@ -56,6 +58,8 @@
 		07306AD9231073930064C913 /* SplendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306ADF231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AEA23107A740064C913 /* PrimeFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
+		0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsViewController.swift; sourceTree = "<group>"; };
+		0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsViewControllerSpecs.swift; sourceTree = "<group>"; };
 		079FCDD323108D2400E767A4 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
 		07E2C83223108D570086958C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		07E2C83423108D570086958C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		07306AC7231073920064C913 /* Splendor */ = {
 			isa = PBXGroup;
 			children = (
+				0797DC202319A7400067C146 /* Game */,
 				07306AC8231073920064C913 /* AppDelegate.swift */,
 				07306ACA231073920064C913 /* ViewController.swift */,
 				07306ACC231073920064C913 /* Main.storyboard */,
@@ -121,8 +126,17 @@
 			children = (
 				07306ADF231073930064C913 /* Info.plist */,
 				07E2C83923108D980086958C /* PrimeFactorsSpecs.swift */,
+				0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */,
 			);
 			path = SplendorTests;
+			sourceTree = "<group>";
+		};
+		0797DC202319A7400067C146 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		07E2C83123108D570086958C /* Frameworks */ = {
@@ -237,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */,
 				07306ACB231073920064C913 /* ViewController.swift in Sources */,
 				07306AEB23107A740064C913 /* PrimeFactors.swift in Sources */,
 				07306AC9231073920064C913 /* AppDelegate.swift in Sources */,
@@ -248,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E2C83A23108D980086958C /* PrimeFactorsSpecs.swift in Sources */,
+				0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
