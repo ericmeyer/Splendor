@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-zm-OVA">
-                                <rect key="frame" x="20" y="49" width="728" height="955"/>
+                                <rect key="frame" x="20" y="49" width="728" height="445"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bTx-BP-y52">
                                     <size key="itemSize" width="50" height="50"/>
@@ -35,15 +35,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL5-N6-ey1">
+                                <rect key="frame" x="354.5" y="501.5" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AkW-3q-8fr" firstAttribute="top" secondItem="AnW-tp-tMI" secondAttribute="top" id="04h-7b-v97"/>
+                            <constraint firstItem="PL5-N6-ey1" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="80S-iJ-Vap"/>
+                            <constraint firstItem="PL5-N6-ey1" firstAttribute="top" secondItem="bOU-zm-OVA" secondAttribute="bottom" constant="7.5" id="Fy1-Dg-kpP"/>
                             <constraint firstItem="AkW-3q-8fr" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="MXZ-3r-Vsi"/>
                             <constraint firstItem="bOU-zm-OVA" firstAttribute="top" secondItem="AkW-3q-8fr" secondAttribute="bottom" constant="8" id="Rw9-x1-RU6"/>
+                            <constraint firstItem="PL5-N6-ey1" firstAttribute="centerY" secondItem="e8n-je-ETf" secondAttribute="centerY" id="WAq-Uk-xE8"/>
                             <constraint firstItem="bOU-zm-OVA" firstAttribute="leading" secondItem="AnW-tp-tMI" secondAttribute="leading" constant="20" id="fGA-Iv-peu"/>
                             <constraint firstItem="AnW-tp-tMI" firstAttribute="trailing" secondItem="bOU-zm-OVA" secondAttribute="trailing" constant="20" id="lXS-Ac-K5k"/>
-                            <constraint firstItem="AnW-tp-tMI" firstAttribute="bottom" secondItem="bOU-zm-OVA" secondAttribute="bottom" constant="20" id="xQh-I0-yK1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AnW-tp-tMI"/>
                     </view>
