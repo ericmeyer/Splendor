@@ -44,6 +44,28 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
                 expect(cell.backgroundColor).to(equal(UIColor.green))
             }
 
+            it("displays the given number of available chips") {
+                let dataSource = AvailableChipsCollectionDataSource()
+                dataSource.set(chipCount: 3)
+
+                let cell = dataSource.collectionView(
+                    buildCollectionView(),
+                    cellForItemAt: IndexPath(row: 1, section: 0)
+                ) as? AvailableChipViewCell
+
+                expect(cell?.chipCount.text).to(equal("3"))
+            }
+
+            it("defaults the number of available chips to 0") {
+                let dataSource = AvailableChipsCollectionDataSource()
+
+                let cell = dataSource.collectionView(
+                    buildCollectionView(),
+                    cellForItemAt: IndexPath(row: 1, section: 0)
+                    ) as? AvailableChipViewCell
+
+                expect(cell?.chipCount.text).to(equal("0"))
+            }
         }
     }
 

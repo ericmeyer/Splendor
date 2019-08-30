@@ -1,5 +1,7 @@
 import UIKit
 
-class AvailableChipViewCell : UICollectionViewCell {
+public class AvailableChipViewCell : UICollectionViewCell {
     
+    @IBOutlet public var chipCount: UILabel!
+
 }

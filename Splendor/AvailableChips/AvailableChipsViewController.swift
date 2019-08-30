@@ -10,6 +10,7 @@ public class AvailableChipsViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         availableChipsView.register(UINib(nibName: "AvailableChipViewCell", bundle: nil), forCellWithReuseIdentifier: "AvailableChipViewCell")
+        availableChipsDataSource.set(chipCount: 5)
         availableChipsView.dataSource = availableChipsDataSource
     }
 

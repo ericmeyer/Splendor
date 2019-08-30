@@ -29,6 +29,9 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="djR-lc-qqS"/>
+            <connections>
+                <outlet property="chipCount" destination="HSq-kJ-4zg" id="giW-ZK-TAx"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
