@@ -15,6 +15,8 @@
 		0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */; };
 		0797DC242319B1130067C146 /* AvailableChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC232319B1130067C146 /* AvailableChipViewCell.swift */; };
 		0797DC262319B1FF0067C146 /* AvailableChipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */; };
+		0797DC2A2319BC500067C146 /* AvailableChipsCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */; };
+		0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */; };
 		079FCDD423108D2400E767A4 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 079FCDD323108D2400E767A4 /* Carthage */; };
 		07E2C83323108D570086958C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
 		07E2C83523108D570086958C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; };
@@ -59,6 +61,8 @@
 		0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsViewControllerSpecs.swift; sourceTree = "<group>"; };
 		0797DC232319B1130067C146 /* AvailableChipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipViewCell.swift; sourceTree = "<group>"; };
 		0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailableChipViewCell.xib; sourceTree = "<group>"; };
+		0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsCollectionDataSource.swift; sourceTree = "<group>"; };
+		0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsCollectionDataSourceSpecs.swift; sourceTree = "<group>"; };
 		079FCDD323108D2400E767A4 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
 		07E2C83223108D570086958C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		07E2C83423108D570086958C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */,
 				0797DC232319B1130067C146 /* AvailableChipViewCell.swift */,
 				0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */,
+				0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */,
 			);
 			path = AvailableChips;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */,
+				0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */,
 			);
 			path = AvailableChips;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			files = (
 				0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */,
 				0797DC242319B1130067C146 /* AvailableChipViewCell.swift in Sources */,
+				0797DC2A2319BC500067C146 /* AvailableChipsCollectionDataSource.swift in Sources */,
 				07306AC9231073920064C913 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */,
+				0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
