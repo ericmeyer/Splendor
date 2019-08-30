@@ -7,13 +7,13 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
     override func spec() {
         func buildCollectionView() -> UICollectionView {
             let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewLayout())
-            collectionView.register(UINib(nibName: "AvailableChipViewCell", bundle: nil), forCellWithReuseIdentifier: "AvailableChipViewCell")
+            collectionView.register(UINib(nibName: "ChipViewCell", bundle: nil), forCellWithReuseIdentifier: "ChipViewCell")
             return collectionView
         }
 
         describe("The available chips") {
             it("has two types of chips") {
-                let dataSource = AvailableChipsCollectionDataSource()
+                let dataSource = ChipCollectionDataSource()
 
                 let actualNumberOfChips = dataSource.collectionView(
                     buildCollectionView(),
@@ -23,7 +23,7 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
             }
 
             it("has blue chips") {
-                let dataSource = AvailableChipsCollectionDataSource()
+                let dataSource = ChipCollectionDataSource()
 
                 let cell = dataSource.collectionView(
                     buildCollectionView(),
@@ -34,7 +34,7 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
             }
 
             it("has green chips") {
-                let dataSource = AvailableChipsCollectionDataSource()
+                let dataSource = ChipCollectionDataSource()
 
                 let cell = dataSource.collectionView(
                     buildCollectionView(),
@@ -45,24 +45,24 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
             }
 
             it("displays the given number of available chips") {
-                let dataSource = AvailableChipsCollectionDataSource()
+                let dataSource = ChipCollectionDataSource()
                 dataSource.set(chipCount: 3)
 
                 let cell = dataSource.collectionView(
                     buildCollectionView(),
                     cellForItemAt: IndexPath(row: 1, section: 0)
-                ) as? AvailableChipViewCell
+                ) as? ChipViewCell
 
                 expect(cell?.chipCount.text).to(equal("3"))
             }
 
             it("defaults the number of available chips to 0") {
-                let dataSource = AvailableChipsCollectionDataSource()
+                let dataSource = ChipCollectionDataSource()
 
                 let cell = dataSource.collectionView(
                     buildCollectionView(),
                     cellForItemAt: IndexPath(row: 1, section: 0)
-                    ) as? AvailableChipViewCell
+                    ) as? ChipViewCell
 
                 expect(cell?.chipCount.text).to(equal("0"))
             }

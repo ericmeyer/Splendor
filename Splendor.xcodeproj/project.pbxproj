@@ -11,11 +11,11 @@
 		07306ACE231073920064C913 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Game.storyboard */; };
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
-		0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */; };
-		0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */; };
-		0797DC242319B1130067C146 /* AvailableChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC232319B1130067C146 /* AvailableChipViewCell.swift */; };
-		0797DC262319B1FF0067C146 /* AvailableChipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */; };
-		0797DC2A2319BC500067C146 /* AvailableChipsCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */; };
+		0797DC1D2319A07C0067C146 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1C2319A07C0067C146 /* GameViewController.swift */; };
+		0797DC1F2319A09F0067C146 /* GameViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1E2319A09F0067C146 /* GameViewControllerSpecs.swift */; };
+		0797DC242319B1130067C146 /* ChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC232319B1130067C146 /* ChipViewCell.swift */; };
+		0797DC262319B1FF0067C146 /* ChipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797DC252319B1FF0067C146 /* ChipViewCell.xib */; };
+		0797DC2A2319BC500067C146 /* ChipCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */; };
 		0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */; };
 		079FCDD423108D2400E767A4 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 079FCDD323108D2400E767A4 /* Carthage */; };
 		07E2C83323108D570086958C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
@@ -57,11 +57,11 @@
 		07306AD4231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AD9231073930064C913 /* SplendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306ADF231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsViewController.swift; sourceTree = "<group>"; };
-		0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsViewControllerSpecs.swift; sourceTree = "<group>"; };
-		0797DC232319B1130067C146 /* AvailableChipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipViewCell.swift; sourceTree = "<group>"; };
-		0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailableChipViewCell.xib; sourceTree = "<group>"; };
-		0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsCollectionDataSource.swift; sourceTree = "<group>"; };
+		0797DC1C2319A07C0067C146 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0797DC1E2319A09F0067C146 /* GameViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerSpecs.swift; sourceTree = "<group>"; };
+		0797DC232319B1130067C146 /* ChipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipViewCell.swift; sourceTree = "<group>"; };
+		0797DC252319B1FF0067C146 /* ChipViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChipViewCell.xib; sourceTree = "<group>"; };
+		0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollectionDataSource.swift; sourceTree = "<group>"; };
 		0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsCollectionDataSourceSpecs.swift; sourceTree = "<group>"; };
 		079FCDD323108D2400E767A4 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
 		07E2C83223108D570086958C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				07306AD4231073930064C913 /* Info.plist */,
-				0797DC202319A7400067C146 /* AvailableChips */,
+				0797DC202319A7400067C146 /* Game */,
 				0797DC272319B63D0067C146 /* SupportingFiles */,
 				07306ACC231073920064C913 /* Game.storyboard */,
 			);
@@ -122,21 +122,21 @@
 		07306ADC231073930064C913 /* SplendorTests */ = {
 			isa = PBXGroup;
 			children = (
-				0797DC282319B6DD0067C146 /* AvailableChips */,
+				0797DC282319B6DD0067C146 /* Game */,
 				07306ADF231073930064C913 /* Info.plist */,
 			);
 			path = SplendorTests;
 			sourceTree = "<group>";
 		};
-		0797DC202319A7400067C146 /* AvailableChips */ = {
+		0797DC202319A7400067C146 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */,
-				0797DC232319B1130067C146 /* AvailableChipViewCell.swift */,
-				0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */,
-				0797DC292319BC500067C146 /* AvailableChipsCollectionDataSource.swift */,
+				0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */,
+				0797DC232319B1130067C146 /* ChipViewCell.swift */,
+				0797DC1C2319A07C0067C146 /* GameViewController.swift */,
+				0797DC252319B1FF0067C146 /* ChipViewCell.xib */,
 			);
-			path = AvailableChips;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		0797DC272319B63D0067C146 /* SupportingFiles */ = {
@@ -149,13 +149,13 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		0797DC282319B6DD0067C146 /* AvailableChips */ = {
+		0797DC282319B6DD0067C146 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */,
+				0797DC1E2319A09F0067C146 /* GameViewControllerSpecs.swift */,
 				0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */,
 			);
-			path = AvailableChips;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		07E2C83123108D570086958C /* Frameworks */ = {
@@ -252,7 +252,7 @@
 				07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */,
 				07306AD0231073930064C913 /* Assets.xcassets in Resources */,
 				07306ACE231073920064C913 /* Game.storyboard in Resources */,
-				0797DC262319B1FF0067C146 /* AvailableChipViewCell.xib in Resources */,
+				0797DC262319B1FF0067C146 /* ChipViewCell.xib in Resources */,
 				079FCDD423108D2400E767A4 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */,
-				0797DC242319B1130067C146 /* AvailableChipViewCell.swift in Sources */,
-				0797DC2A2319BC500067C146 /* AvailableChipsCollectionDataSource.swift in Sources */,
+				0797DC1D2319A07C0067C146 /* GameViewController.swift in Sources */,
+				0797DC242319B1130067C146 /* ChipViewCell.swift in Sources */,
+				0797DC2A2319BC500067C146 /* ChipCollectionDataSource.swift in Sources */,
 				07306AC9231073920064C913 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0797DC1F2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift in Sources */,
+				0797DC1F2319A09F0067C146 /* GameViewControllerSpecs.swift in Sources */,
 				0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

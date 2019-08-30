@@ -1,6 +1,6 @@
 import UIKit
 
-public class AvailableChipsCollectionDataSource: UIView, UICollectionViewDataSource {
+public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
 
     private var chipCount: Int = 0
 
@@ -13,7 +13,7 @@ public class AvailableChipsCollectionDataSource: UIView, UICollectionViewDataSou
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AvailableChipViewCell", for: indexPath) as! AvailableChipViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChipViewCell", for: indexPath) as! ChipViewCell
         if indexPath.row == 0 {
             cell.backgroundColor = .blue
         } else {

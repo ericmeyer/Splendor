@@ -2,11 +2,11 @@ import Splendor
 import Quick
 import Nimble
 
-class AvailableChipsViewControllerSpecs: QuickSpec {
+class GameViewControllerSpecs: QuickSpec {
 
     override func spec() {
-        func buildController() -> AvailableChipsViewController {
-            let controller = AvailableChipsViewController()
+        func buildController() -> GameViewController {
+            let controller = GameViewController()
             let collectionViewOne = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewLayout())
             controller.availableChipsView = collectionViewOne
 
