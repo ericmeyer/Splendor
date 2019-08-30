@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-zm-OVA">
-                                <rect key="frame" x="20" y="20" width="728" height="984"/>
+                                <rect key="frame" x="20" y="49" width="728" height="955"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bTx-BP-y52">
                                     <size key="itemSize" width="50" height="50"/>
@@ -29,13 +29,21 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkW-3q-8fr">
+                                <rect key="frame" x="326" y="20" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AnW-tp-tMI" firstAttribute="bottom" secondItem="bOU-zm-OVA" secondAttribute="bottom" constant="20" id="GYY-7Q-rju"/>
-                            <constraint firstItem="bOU-zm-OVA" firstAttribute="leading" secondItem="AnW-tp-tMI" secondAttribute="leading" constant="20" id="chp-Ct-Txw"/>
-                            <constraint firstItem="AnW-tp-tMI" firstAttribute="trailing" secondItem="bOU-zm-OVA" secondAttribute="trailing" constant="20" id="hE4-na-Y8N"/>
-                            <constraint firstItem="bOU-zm-OVA" firstAttribute="top" secondItem="AnW-tp-tMI" secondAttribute="top" id="pMH-cO-TcT"/>
+                            <constraint firstItem="AkW-3q-8fr" firstAttribute="top" secondItem="AnW-tp-tMI" secondAttribute="top" id="04h-7b-v97"/>
+                            <constraint firstItem="AkW-3q-8fr" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="MXZ-3r-Vsi"/>
+                            <constraint firstItem="bOU-zm-OVA" firstAttribute="top" secondItem="AkW-3q-8fr" secondAttribute="bottom" constant="8" id="Rw9-x1-RU6"/>
+                            <constraint firstItem="bOU-zm-OVA" firstAttribute="leading" secondItem="AnW-tp-tMI" secondAttribute="leading" constant="20" id="fGA-Iv-peu"/>
+                            <constraint firstItem="AnW-tp-tMI" firstAttribute="trailing" secondItem="bOU-zm-OVA" secondAttribute="trailing" constant="20" id="lXS-Ac-K5k"/>
+                            <constraint firstItem="AnW-tp-tMI" firstAttribute="bottom" secondItem="bOU-zm-OVA" secondAttribute="bottom" constant="20" id="xQh-I0-yK1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AnW-tp-tMI"/>
                     </view>
