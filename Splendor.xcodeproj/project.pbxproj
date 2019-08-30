@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07306AC9231073920064C913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07306AC8231073920064C913 /* AppDelegate.swift */; };
-		07306ACE231073920064C913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Main.storyboard */; };
+		07306ACE231073920064C913 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Game.storyboard */; };
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
 		0797DC1D2319A07C0067C146 /* AvailableChipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */; };
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		07306AC5231073920064C913 /* Splendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306AC8231073920064C913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07306ACD231073920064C913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07306ACD231073920064C913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Game.storyboard; sourceTree = "<group>"; };
 		07306ACF231073930064C913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07306AD2231073930064C913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07306AD4231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,12 +107,10 @@
 		07306AC7231073920064C913 /* Splendor */ = {
 			isa = PBXGroup;
 			children = (
-				0797DC202319A7400067C146 /* Game */,
-				07306AC8231073920064C913 /* AppDelegate.swift */,
-				07306ACC231073920064C913 /* Main.storyboard */,
-				07306ACF231073930064C913 /* Assets.xcassets */,
-				07306AD1231073930064C913 /* LaunchScreen.storyboard */,
 				07306AD4231073930064C913 /* Info.plist */,
+				0797DC202319A7400067C146 /* AvailableChips */,
+				0797DC272319B63D0067C146 /* SupportingFiles */,
+				07306ACC231073920064C913 /* Game.storyboard */,
 			);
 			path = Splendor;
 			sourceTree = "<group>";
@@ -120,20 +118,38 @@
 		07306ADC231073930064C913 /* SplendorTests */ = {
 			isa = PBXGroup;
 			children = (
+				0797DC282319B6DD0067C146 /* AvailableChips */,
 				07306ADF231073930064C913 /* Info.plist */,
-				0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */,
 			);
 			path = SplendorTests;
 			sourceTree = "<group>";
 		};
-		0797DC202319A7400067C146 /* Game */ = {
+		0797DC202319A7400067C146 /* AvailableChips */ = {
 			isa = PBXGroup;
 			children = (
 				0797DC1C2319A07C0067C146 /* AvailableChipsViewController.swift */,
 				0797DC232319B1130067C146 /* AvailableChipViewCell.swift */,
 				0797DC252319B1FF0067C146 /* AvailableChipViewCell.xib */,
 			);
-			path = Game;
+			path = AvailableChips;
+			sourceTree = "<group>";
+		};
+		0797DC272319B63D0067C146 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				07306AC8231073920064C913 /* AppDelegate.swift */,
+				07306ACF231073930064C913 /* Assets.xcassets */,
+				07306AD1231073930064C913 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0797DC282319B6DD0067C146 /* AvailableChips */ = {
+			isa = PBXGroup;
+			children = (
+				0797DC1E2319A09F0067C146 /* AvailableChipsViewControllerSpecs.swift */,
+			);
+			path = AvailableChips;
 			sourceTree = "<group>";
 		};
 		07E2C83123108D570086958C /* Frameworks */ = {
@@ -229,7 +245,7 @@
 			files = (
 				07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */,
 				07306AD0231073930064C913 /* Assets.xcassets in Resources */,
-				07306ACE231073920064C913 /* Main.storyboard in Resources */,
+				07306ACE231073920064C913 /* Game.storyboard in Resources */,
 				0797DC262319B1FF0067C146 /* AvailableChipViewCell.xib in Resources */,
 				079FCDD423108D2400E767A4 /* Carthage in Resources */,
 			);
@@ -274,12 +290,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07306ACC231073920064C913 /* Main.storyboard */ = {
+		07306ACC231073920064C913 /* Game.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				07306ACD231073920064C913 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Game.storyboard;
 			sourceTree = "<group>";
 		};
 		07306AD1231073930064C913 /* LaunchScreen.storyboard */ = {

@@ -5,11 +5,6 @@ import Nimble
 class AvailableChipsViewControllerSpecs: QuickSpec {
 
     override func spec() {
-        it("exists") {
-            let controller = AvailableChipsViewController()
-            expect(controller).notTo(beNil())
-        }
-
         func buildController() -> AvailableChipsViewController {
             let controller = AvailableChipsViewController()
             let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewLayout())
