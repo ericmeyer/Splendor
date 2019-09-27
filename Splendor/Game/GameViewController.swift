@@ -15,6 +15,7 @@ public class GameViewController: UIViewController {
         availableChipsView.dataSource = availableChipsDataSource
 
         playerOneChipsView.register(UINib(nibName: "ChipViewCell", bundle: nil), forCellWithReuseIdentifier: "ChipViewCell")
+        playerOneChipsDataSource.set(chipCount: 0)
         playerOneChipsView.dataSource = playerOneChipsDataSource
     }
 
