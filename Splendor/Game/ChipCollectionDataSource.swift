@@ -2,10 +2,13 @@ import UIKit
 
 public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
 
-    private var chipCount: Int = 0
+    private var chipCollection: ChipCollection?
 
     public func set(chipCount: Int) {
-        self.chipCount = chipCount
+        self.chipCollection = ChipCollection(chips: [
+            .blue : chipCount,
+            .green : chipCount
+        ])
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -15,12 +18,24 @@ public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChipViewCell", for: indexPath) as! ChipViewCell
         if indexPath.row == 0 {
-            cell.backgroundColor = .blue
+            configure(cell: cell, chipColor: .blue)
         } else {
-            cell.backgroundColor = .green
+            configure(cell: cell, chipColor: .green)
         }
-        cell.chipCount.text = "\(chipCount)"
         return cell
     }
 
+    func configure(cell: ChipViewCell, chipColor: ChipColor) {
+        if let chipCollection = chipCollection {
+            cell.chipCount.text = "\(chipCollection.count(of: chipColor))"
+        } else {
+            cell.chipCount.text = "0"
+        }
+        switch chipColor {
+        case .blue:
+            cell.backgroundColor = .blue
+        case .green:
+            cell.backgroundColor = .green
+        }
+    }
 }
