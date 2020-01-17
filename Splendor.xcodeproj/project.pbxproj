@@ -11,6 +11,8 @@
 		07306ACE231073920064C913 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACC231073920064C913 /* Game.storyboard */; };
 		07306AD0231073930064C913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07306ACF231073930064C913 /* Assets.xcassets */; };
 		07306AD3231073930064C913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07306AD1231073930064C913 /* LaunchScreen.storyboard */; };
+		074769D923D262F200A9067F /* GemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074769D823D262F200A9067F /* GemCardView.swift */; };
+		074769DB23D263BF00A9067F /* SplendorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074769DA23D263BF00A9067F /* SplendorKit.swift */; };
 		075C0B3F233EB51400395C18 /* ChipColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C0B3E233EB51400395C18 /* ChipColor.swift */; };
 		075C0B41233EB54300395C18 /* ChipCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C0B40233EB54300395C18 /* ChipCollection.swift */; };
 		0797DC1D2319A07C0067C146 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC1C2319A07C0067C146 /* GameViewController.swift */; };
@@ -89,6 +91,8 @@
 		07306AD4231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07306AD9231073930064C913 /* SplendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07306ADF231073930064C913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074769D823D262F200A9067F /* GemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemCardView.swift; sourceTree = "<group>"; };
+		074769DA23D263BF00A9067F /* SplendorKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplendorKit.swift; sourceTree = "<group>"; };
 		075C0B3E233EB51400395C18 /* ChipColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipColor.swift; sourceTree = "<group>"; };
 		075C0B40233EB54300395C18 /* ChipCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollection.swift; sourceTree = "<group>"; };
 		0797DC1C2319A07C0067C146 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 		0797DC202319A7400067C146 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				074769DA23D263BF00A9067F /* SplendorKit.swift */,
 				07BC4883237A52720042EFB5 /* AccessibilityIdentifiers.swift */,
 				075C0B40233EB54300395C18 /* ChipCollection.swift */,
 				0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */,
@@ -195,6 +200,7 @@
 				B94F9FAC23A43943000EC5F1 /* GameViewProtocol.swift */,
 				B94F9FAE23A4396A000EC5F1 /* Game.swift */,
 				B94F9FB023A43982000EC5F1 /* GamePresenter.swift */,
+				074769D823D262F200A9067F /* GemCardView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -376,8 +382,10 @@
 				B94F9FAD23A43943000EC5F1 /* GameViewProtocol.swift in Sources */,
 				B94F9FAF23A4396A000EC5F1 /* Game.swift in Sources */,
 				0797DC1D2319A07C0067C146 /* GameViewController.swift in Sources */,
+				074769DB23D263BF00A9067F /* SplendorKit.swift in Sources */,
 				0797DC242319B1130067C146 /* ChipViewCell.swift in Sources */,
 				0797DC2A2319BC500067C146 /* ChipCollectionDataSource.swift in Sources */,
+				074769D923D262F200A9067F /* GemCardView.swift in Sources */,
 				075C0B3F233EB51400395C18 /* ChipColor.swift in Sources */,
 				07BC4884237A52720042EFB5 /* AccessibilityIdentifiers.swift in Sources */,
 				07306AC9231073920064C913 /* AppDelegate.swift in Sources */,

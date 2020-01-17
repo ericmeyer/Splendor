@@ -4,6 +4,7 @@ public class GameViewController: UIViewController, UICollectionViewDelegate, Gam
 
     @IBOutlet public var availableChipsView: UICollectionView!
     @IBOutlet public var playerOneChipsView: UICollectionView!
+    @IBOutlet var gemCardView: GemCardView!
 
     let availableChipsDataSource = ChipCollectionDataSource()
     let playerOneChipsDataSource = ChipCollectionDataSource()
@@ -14,6 +15,8 @@ public class GameViewController: UIViewController, UICollectionViewDelegate, Gam
         super.viewDidLoad()
         presenter = GamePresenter(view: self)
         presenter?.startGame()
+
+        gemCardView.set(card: GemCard(blueCost: 2, greenCost: 1, redCost: 4))
     }
 
     func gameWasStarted(game: Game) {

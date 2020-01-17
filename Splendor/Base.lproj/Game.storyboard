@@ -41,8 +41,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zYC-9N-X3V">
-                                <rect key="frame" x="20" y="466" width="374" height="376"/>
+                                <rect key="frame" x="20" y="466" width="374" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="kDK-Ip-hwx"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F48-3e-ZI7">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -51,32 +54,48 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffK-9p-mVc" customClass="GemCardView" customModule="Splendor" customModuleProvider="target">
+                                <rect key="frame" x="123" y="548" width="168" height="217"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ffK-9p-mVc" secondAttribute="height" multiplier="24:31" id="6b5-Uw-HDu"/>
+                                    <constraint firstAttribute="width" constant="168" id="o3H-mA-KBJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blueCost">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPurchasable" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AkW-3q-8fr" firstAttribute="top" secondItem="AnW-tp-tMI" secondAttribute="top" id="04h-7b-v97"/>
                             <constraint firstItem="PL5-N6-ey1" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="80S-iJ-Vap"/>
                             <constraint firstItem="PL5-N6-ey1" firstAttribute="top" secondItem="bOU-zm-OVA" secondAttribute="bottom" constant="7.5" id="Fy1-Dg-kpP"/>
+                            <constraint firstItem="ffK-9p-mVc" firstAttribute="top" secondItem="zYC-9N-X3V" secondAttribute="bottom" constant="8" id="GT7-ZZ-fLm"/>
                             <constraint firstItem="AkW-3q-8fr" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="MXZ-3r-Vsi"/>
                             <constraint firstItem="zYC-9N-X3V" firstAttribute="top" secondItem="PL5-N6-ey1" secondAttribute="bottom" constant="7.5" id="PPH-iT-cEY"/>
                             <constraint firstItem="bOU-zm-OVA" firstAttribute="top" secondItem="AkW-3q-8fr" secondAttribute="bottom" constant="8" id="Rw9-x1-RU6"/>
                             <constraint firstItem="PL5-N6-ey1" firstAttribute="centerY" secondItem="e8n-je-ETf" secondAttribute="centerY" id="WAq-Uk-xE8"/>
+                            <constraint firstItem="ffK-9p-mVc" firstAttribute="centerX" secondItem="e8n-je-ETf" secondAttribute="centerX" id="Wxh-0G-eZZ"/>
                             <constraint firstItem="zYC-9N-X3V" firstAttribute="leading" secondItem="AnW-tp-tMI" secondAttribute="leading" constant="20" id="dDb-5B-r15"/>
                             <constraint firstItem="bOU-zm-OVA" firstAttribute="leading" secondItem="AnW-tp-tMI" secondAttribute="leading" constant="20" id="fGA-Iv-peu"/>
                             <constraint firstItem="AnW-tp-tMI" firstAttribute="trailing" secondItem="bOU-zm-OVA" secondAttribute="trailing" constant="20" id="lXS-Ac-K5k"/>
-                            <constraint firstItem="AnW-tp-tMI" firstAttribute="bottom" secondItem="zYC-9N-X3V" secondAttribute="bottom" constant="20" id="o2b-Fq-g2P"/>
                             <constraint firstItem="AnW-tp-tMI" firstAttribute="trailing" secondItem="zYC-9N-X3V" secondAttribute="trailing" constant="20" id="vXI-c1-JzX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AnW-tp-tMI"/>
                     </view>
                     <connections>
                         <outlet property="availableChipsView" destination="bOU-zm-OVA" id="pGy-fu-M9v"/>
+                        <outlet property="gemCardView" destination="ffK-9p-mVc" id="x2g-H9-44s"/>
                         <outlet property="playerOneChipsView" destination="zYC-9N-X3V" id="vi7-Aw-pwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hx-kF-tOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-650" y="110.74218749999999"/>
+            <point key="canvasLocation" x="-650.72463768115949" y="110.49107142857143"/>
         </scene>
     </scenes>
 </document>
