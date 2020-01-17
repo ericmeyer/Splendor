@@ -20,10 +20,22 @@
 		0797DC2A2319BC500067C146 /* ChipCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */; };
 		0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */; };
 		079FCDD423108D2400E767A4 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 079FCDD323108D2400E767A4 /* Carthage */; };
+		07BC4875237A48850042EFB5 /* SplendorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC4874237A48850042EFB5 /* SplendorUITests.swift */; };
+		07BC487C237A4A6A0042EFB5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
+		07BC487D237A4A6A0042EFB5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; };
+		07BC4881237A4A8C0042EFB5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07BC4882237A4A8C0042EFB5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07BC4884237A52720042EFB5 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC4883237A52720042EFB5 /* AccessibilityIdentifiers.swift */; };
+		07BC4885237A53BD0042EFB5 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC4883237A52720042EFB5 /* AccessibilityIdentifiers.swift */; };
 		07E2C83323108D570086958C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; };
 		07E2C83523108D570086958C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; };
 		07E2C83723108D790086958C /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83223108D570086958C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07E2C83823108D790086958C /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07E2C83423108D570086958C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B937886023D24D7100924D0E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B937885F23D24D7100924D0E /* GameView.swift */; };
+		B94F9FAB23A4316F000EC5F1 /* ChipCollectionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F9FAA23A4316F000EC5F1 /* ChipCollectionSpecs.swift */; };
+		B94F9FAD23A43943000EC5F1 /* GameViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F9FAC23A43943000EC5F1 /* GameViewProtocol.swift */; };
+		B94F9FAF23A4396A000EC5F1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F9FAE23A4396A000EC5F1 /* Game.swift */; };
+		B94F9FB123A43982000EC5F1 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F9FB023A43982000EC5F1 /* GamePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +46,27 @@
 			remoteGlobalIDString = 07306AC4231073920064C913;
 			remoteInfo = Splendor;
 		};
+		07BC4877237A48850042EFB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07306ABD231073920064C913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07306AC4231073920064C913;
+			remoteInfo = Splendor;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		07BC4880237A4A7F0042EFB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07BC4881237A4A8C0042EFB5 /* Nimble.framework in CopyFiles */,
+				07BC4882237A4A8C0042EFB5 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07E2C83623108D630086958C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,8 +98,17 @@
 		0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollectionDataSource.swift; sourceTree = "<group>"; };
 		0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableChipsCollectionDataSourceSpecs.swift; sourceTree = "<group>"; };
 		079FCDD323108D2400E767A4 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		07BC4872237A48850042EFB5 /* SplendorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplendorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07BC4874237A48850042EFB5 /* SplendorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplendorUITests.swift; sourceTree = "<group>"; };
+		07BC4876237A48850042EFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BC4883237A52720042EFB5 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		07E2C83223108D570086958C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		07E2C83423108D570086958C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		B937885F23D24D7100924D0E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		B94F9FAA23A4316F000EC5F1 /* ChipCollectionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollectionSpecs.swift; sourceTree = "<group>"; };
+		B94F9FAC23A43943000EC5F1 /* GameViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewProtocol.swift; sourceTree = "<group>"; };
+		B94F9FAE23A4396A000EC5F1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B94F9FB023A43982000EC5F1 /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +128,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07BC486F237A48850042EFB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BC487C237A4A6A0042EFB5 /* Nimble.framework in Frameworks */,
+				07BC487D237A4A6A0042EFB5 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +145,7 @@
 			children = (
 				07306AC7231073920064C913 /* Splendor */,
 				07306ADC231073930064C913 /* SplendorTests */,
+				07BC4873237A48850042EFB5 /* SplendorUITests */,
 				07306AC6231073920064C913 /* Products */,
 				079FCDD323108D2400E767A4 /* Carthage */,
 				07E2C83123108D570086958C /* Frameworks */,
@@ -108,6 +157,7 @@
 			children = (
 				07306AC5231073920064C913 /* Splendor.app */,
 				07306AD9231073930064C913 /* SplendorTests.xctest */,
+				07BC4872237A48850042EFB5 /* SplendorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,12 +185,16 @@
 		0797DC202319A7400067C146 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				07BC4883237A52720042EFB5 /* AccessibilityIdentifiers.swift */,
+				075C0B40233EB54300395C18 /* ChipCollection.swift */,
 				0797DC292319BC500067C146 /* ChipCollectionDataSource.swift */,
 				075C0B3E233EB51400395C18 /* ChipColor.swift */,
 				0797DC232319B1130067C146 /* ChipViewCell.swift */,
 				0797DC252319B1FF0067C146 /* ChipViewCell.xib */,
 				0797DC1C2319A07C0067C146 /* GameViewController.swift */,
-				075C0B40233EB54300395C18 /* ChipCollection.swift */,
+				B94F9FAC23A43943000EC5F1 /* GameViewProtocol.swift */,
+				B94F9FAE23A4396A000EC5F1 /* Game.swift */,
+				B94F9FB023A43982000EC5F1 /* GamePresenter.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -160,8 +214,19 @@
 			children = (
 				0797DC1E2319A09F0067C146 /* GameViewControllerSpecs.swift */,
 				0797DC2B2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift */,
+				B94F9FAA23A4316F000EC5F1 /* ChipCollectionSpecs.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		07BC4873237A48850042EFB5 /* SplendorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07BC4874237A48850042EFB5 /* SplendorUITests.swift */,
+				07BC4876237A48850042EFB5 /* Info.plist */,
+				B937885F23D24D7100924D0E /* GameView.swift */,
+			);
+			path = SplendorUITests;
 			sourceTree = "<group>";
 		};
 		07E2C83123108D570086958C /* Frameworks */ = {
@@ -212,13 +277,32 @@
 			productReference = 07306AD9231073930064C913 /* SplendorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		07BC4871237A48850042EFB5 /* SplendorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BC487B237A48850042EFB5 /* Build configuration list for PBXNativeTarget "SplendorUITests" */;
+			buildPhases = (
+				07BC486E237A48850042EFB5 /* Sources */,
+				07BC486F237A48850042EFB5 /* Frameworks */,
+				07BC4870237A48850042EFB5 /* Resources */,
+				07BC4880237A4A7F0042EFB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07BC4878237A48850042EFB5 /* PBXTargetDependency */,
+			);
+			name = SplendorUITests;
+			productName = SplendorUITests;
+			productReference = 07BC4872237A48850042EFB5 /* SplendorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		07306ABD231073920064C913 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Eric Meyer";
 				TargetAttributes = {
@@ -227,6 +311,10 @@
 					};
 					07306AD8231073930064C913 = {
 						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 07306AC4231073920064C913;
+					};
+					07BC4871237A48850042EFB5 = {
+						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 07306AC4231073920064C913;
 					};
 				};
@@ -246,6 +334,7 @@
 			targets = (
 				07306AC4231073920064C913 /* Splendor */,
 				07306AD8231073930064C913 /* SplendorTests */,
+				07BC4871237A48850042EFB5 /* SplendorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +359,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07BC4870237A48850042EFB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,11 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94F9FAD23A43943000EC5F1 /* GameViewProtocol.swift in Sources */,
+				B94F9FAF23A4396A000EC5F1 /* Game.swift in Sources */,
 				0797DC1D2319A07C0067C146 /* GameViewController.swift in Sources */,
 				0797DC242319B1130067C146 /* ChipViewCell.swift in Sources */,
 				0797DC2A2319BC500067C146 /* ChipCollectionDataSource.swift in Sources */,
 				075C0B3F233EB51400395C18 /* ChipColor.swift in Sources */,
+				07BC4884237A52720042EFB5 /* AccessibilityIdentifiers.swift in Sources */,
 				07306AC9231073920064C913 /* AppDelegate.swift in Sources */,
+				B94F9FB123A43982000EC5F1 /* GamePresenter.swift in Sources */,
 				075C0B41233EB54300395C18 /* ChipCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +391,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0797DC1F2319A09F0067C146 /* GameViewControllerSpecs.swift in Sources */,
+				B94F9FAB23A4316F000EC5F1 /* ChipCollectionSpecs.swift in Sources */,
 				0797DC2C2319BDE10067C146 /* AvailableChipsCollectionDataSourceSpecs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BC486E237A48850042EFB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BC4875237A48850042EFB5 /* SplendorUITests.swift in Sources */,
+				B937886023D24D7100924D0E /* GameView.swift in Sources */,
+				07BC4885237A53BD0042EFB5 /* AccessibilityIdentifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = 07306AC4231073920064C913 /* Splendor */;
 			targetProxy = 07306ADA231073930064C913 /* PBXContainerItemProxy */;
+		};
+		07BC4878237A48850042EFB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07306AC4231073920064C913 /* Splendor */;
+			targetProxy = 07BC4877237A48850042EFB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,6 +639,52 @@
 			};
 			name = Release;
 		};
+		07BC4879237A48850042EFB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SplendorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EighthLight.SplendorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splendor;
+			};
+			name = Debug;
+		};
+		07BC487A237A48850042EFB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SplendorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EighthLight.SplendorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splendor;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,6 +711,15 @@
 			buildConfigurations = (
 				07306AE6231073930064C913 /* Debug */,
 				07306AE7231073930064C913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07BC487B237A48850042EFB5 /* Build configuration list for PBXNativeTarget "SplendorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07BC4879237A48850042EFB5 /* Debug */,
+				07BC487A237A48850042EFB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

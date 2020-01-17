@@ -4,11 +4,8 @@ public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
 
     private var chipCollection: ChipCollection?
 
-    public func set(chipCount: Int) {
-        self.chipCollection = ChipCollection(chips: [
-            .blue : chipCount,
-            .green : chipCount
-        ])
+    public func set(chipCollection: ChipCollection) {
+        self.chipCollection = chipCollection
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,8 +31,10 @@ public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
         switch chipColor {
         case .blue:
             cell.backgroundColor = .blue
+            cell.chipCount.accessibilityIdentifier = AccessibilityIdentifiers.ChipColors.blue.rawValue
         case .green:
             cell.backgroundColor = .green
+            cell.chipCount.accessibilityIdentifier = AccessibilityIdentifiers.ChipColors.green.rawValue
         }
     }
 }

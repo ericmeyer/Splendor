@@ -21,6 +21,7 @@ class GameViewControllerSpecs: QuickSpec {
         describe("Loading the view") {
             it("sets the data source for the available chips view") {
                 let controller = buildController()
+
                 controller.viewDidLoad()
 
                 expect(controller.availableChipsView.dataSource).notTo(beNil())
@@ -28,6 +29,7 @@ class GameViewControllerSpecs: QuickSpec {
 
             it("sets the data source for player one chips view") {
                 let controller = buildController()
+
                 controller.viewDidLoad()
 
                 expect(controller.playerOneChipsView.dataSource).notTo(beNil())
@@ -35,7 +37,6 @@ class GameViewControllerSpecs: QuickSpec {
                     controller.availableChipsView.dataSource
                 ))
             }
-
         }
     }
 

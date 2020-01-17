@@ -46,7 +46,10 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
 
             it("displays the given number of available chips") {
                 let dataSource = ChipCollectionDataSource()
-                dataSource.set(chipCount: 3)
+                let chipCollection = ChipCollection(chips: [
+                    .green : 3
+                ])
+                dataSource.set(chipCollection: chipCollection)
 
                 let cell = dataSource.collectionView(
                     buildCollectionView(),
