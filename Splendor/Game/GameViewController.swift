@@ -39,7 +39,15 @@ public class GameViewController: UIViewController, UICollectionViewDelegate, Gam
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let color: ChipColor = indexPath.row == 0 ? .blue : .green
+        let color: ChipColor
+        switch indexPath.row {
+        case 0 :
+            color = .blue
+        case 1:
+            color = .green
+        default:
+            color = .red
+        }
         if collectionView == playerOneChipsView {
             presenter?.takeChip(color: color)
         } else if collectionView == availableChipsView {
