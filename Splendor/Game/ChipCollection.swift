@@ -2,6 +2,7 @@ public class ChipCollection {
 
     public typealias ChipCount = Int
     private var chips: [ChipColor: ChipCount]
+    private let maxChips = 5
 
     public init(chips: [ChipColor: ChipCount]) {
         self.chips = chips
@@ -23,7 +24,9 @@ public class ChipCollection {
     }
 
     public func add(color: ChipColor) {
-        chips[color] = count(of: color) + 1
+        let chipCount = count(of: color)
+        if chipCount < maxChips {
+            chips[color] = count(of: color) + 1
+        }
     }
-
 }
