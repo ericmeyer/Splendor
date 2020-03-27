@@ -33,11 +33,11 @@ class ChipCollectionSpecs: QuickSpec {
 
         describe("Adding a chip") {
             it("adds a blue chip") {
-                let collection = ChipCollection(chips: [.blue: 5])
+                let collection = ChipCollection(chips: [.blue: 4])
 
                 collection.add(color: .blue)
 
-                expect(collection.count(of: .blue)).to(equal(6))
+                expect(collection.count(of: .blue)).to(equal(5))
             }
 
             it("adds a chip that was not present") {
@@ -46,6 +46,14 @@ class ChipCollectionSpecs: QuickSpec {
                 collection.add(color: .green)
 
                 expect(collection.count(of: .green)).to(equal(1))
+            }
+
+            it("has a max of 5 chips") {
+                let collection = ChipCollection(chips: [.blue: 5])
+
+                collection.add(color: .blue)
+
+                expect(collection.count(of: .blue)).to(equal(5))
             }
         }
     }

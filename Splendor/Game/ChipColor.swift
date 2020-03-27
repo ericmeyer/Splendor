@@ -1,3 +1,3 @@
 public enum ChipColor {
-    case blue, green
+    case blue, green, red
 }

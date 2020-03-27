@@ -12,14 +12,14 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
         }
 
         describe("The available chips") {
-            it("has two types of chips") {
+            it("has three types of chips") {
                 let dataSource = ChipCollectionDataSource()
 
                 let actualNumberOfChips = dataSource.collectionView(
                     buildCollectionView(),
                     numberOfItemsInSection: 0
                 )
-                expect(actualNumberOfChips).to(equal(2))
+                expect(actualNumberOfChips).to(equal(3))
             }
 
             it("has blue chips") {
@@ -42,6 +42,17 @@ class AvailableChipsCollectionDataSourceSpecs: QuickSpec {
                 )
 
                 expect(cell.backgroundColor).to(equal(UIColor.green))
+            }
+
+            it("has red chips") {
+                let dataSource = ChipCollectionDataSource()
+
+                let cell = dataSource.collectionView(
+                    buildCollectionView(),
+                    cellForItemAt: IndexPath(row: 2, section: 0)
+                )
+
+                expect(cell.backgroundColor).to(equal(UIColor.red))
             }
 
             it("displays the given number of available chips") {

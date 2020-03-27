@@ -8,6 +8,7 @@ public struct AccessibilityIdentifiers {
     public enum ChipColors : String {
         case blue = "available_blue_chips"
         case green = "available_green_chips"
+        case red = "available_red_chips"
     }
 
 }
