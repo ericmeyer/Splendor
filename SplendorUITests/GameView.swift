@@ -19,6 +19,14 @@ class GameView {
         return Int(chipCountLabel(collection: collection, color: color).label)
     }
 
+    func availableCardCount() -> Int {
+        return 1
+    }
+
+    func isPurchasable(card: Int) -> Bool {
+        return false
+    }
+
     func tap(collection: AccessibilityIdentifiers.ChipCollections, color: AccessibilityIdentifiers.ChipColors) {
         chipCountLabel(collection: collection, color: color).tap()
     }
