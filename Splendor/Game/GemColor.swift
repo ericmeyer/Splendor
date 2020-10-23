@@ -1,3 +1,3 @@
-public enum ChipColor {
+public enum GemColor {
     case blue, green, red
 }

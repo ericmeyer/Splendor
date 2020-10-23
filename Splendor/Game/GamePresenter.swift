@@ -13,7 +13,7 @@ class GamePresenter {
         }
     }
 
-    func takeChip(color: ChipColor) {
+    func takeChip(color: GemColor) {
         if let game = game {
             game.bankChipCollection.remove(color: color)
             game.playerChipCollection.add(color: color)
@@ -21,7 +21,7 @@ class GamePresenter {
         }
     }
 
-    func giveChip(color: ChipColor) {
+    func giveChip(color: GemColor) {
         if let game = game {
             game.bankChipCollection.add(color: color)
             game.playerChipCollection.remove(color: color)

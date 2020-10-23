@@ -39,7 +39,7 @@ public class GameViewController: UIViewController, UICollectionViewDelegate, Gam
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let color: ChipColor
+        let color: GemColor
         switch indexPath.row {
         case 0 :
             color = .blue

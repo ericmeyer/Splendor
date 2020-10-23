@@ -15,22 +15,22 @@ public class ChipCollectionDataSource: UIView, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChipViewCell", for: indexPath) as! ChipViewCell
         if indexPath.row == 0 {
-            configure(cell: cell, chipColor: .blue)
+            configure(cell: cell, GemColor: .blue)
         } else if indexPath.row == 1 {
-            configure(cell: cell, chipColor: .green)
+            configure(cell: cell, GemColor: .green)
         } else {
-            configure(cell: cell, chipColor: .red)
+            configure(cell: cell, GemColor: .red)
         }
         return cell
     }
 
-    func configure(cell: ChipViewCell, chipColor: ChipColor) {
+    func configure(cell: ChipViewCell, GemColor: GemColor) {
         if let chipCollection = chipCollection {
-            cell.chipCount.text = "\(chipCollection.count(of: chipColor))"
+            cell.chipCount.text = "\(chipCollection.count(of: GemColor))"
         } else {
             cell.chipCount.text = "0"
         }
-        switch chipColor {
+        switch GemColor {
         case .blue:
             cell.backgroundColor = .blue
             cell.chipCount.accessibilityIdentifier = AccessibilityIdentifiers.ChipColors.blue.rawValue
